@@ -183,9 +183,9 @@ public class Principal extends javax.swing.JFrame {
         String usuario = txtUsuario.getText();
         String contrasenia = txtContrasenia.getText();
         
+        String mensaje = control.validarUsuario(usuario, contrasenia);
         
-        String mensaje = control.validarUsuario();
-        
+        txtMensaje.setText(mensaje);
         
     }//GEN-LAST:event_btnLoginActionPerformed
 
